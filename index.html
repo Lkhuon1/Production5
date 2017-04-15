@@ -28,14 +28,23 @@
 </head>
 <body>
 	<h1 class="center">ITMD-361 - Lab 7 - Basic JavaScript Event Handling and DOM</h1>
-	<h2 class="center">Your Name Here</h2>
-	<h3 class="center">Your IIT email here</h3>
+	<h2 class="center">Luno Khuon</h2>
+	<h3 class="center">lkhuon1@hawk.iit.edu</h3>
 	<div id="container">
 		<input id="entryinput" type="text" name="textentry" placeholder="Enter a Message">
 		<div id="entrybutton">Alert Me</div>
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
+	  <!-- Listen to the Alert Me button, if clicked call function -->	 
+	  document.getElementById('entrybutton').addEventListener("click", function(){
+	    <!-- Get the text entered and store it in txtenter variable for output -->
+	    var txtenter = document.getElementById('entryinput').value;
+		<!-- Output my name plus the txt enter per problem requirement -->
+		alert("Luno Khuon: " + txtenter);
+		<!-- Out put the text entered where the show results here -->
+		document.getElementById('textoutput').innerHTML = txtenter;
+	  });
 		
 	</script>
 </body>
